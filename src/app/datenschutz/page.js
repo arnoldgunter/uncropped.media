@@ -40,18 +40,31 @@ export default function DatenschutzPage() {
                 Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen bzw. Vertragsdurchführung).
             </p>
 
-            <h4>Übermittlung an Formspree</h4>
+            <h4>Übermittlung an Formsubmit</h4>
             <p>
-                Das Formular wird über den Dienst <strong>Formspree</strong> (
-                <a href="https://formspree.io" target="_blank" rel="noopener noreferrer">
-                    https://formspree.io
+                Das Kontaktformular wird über den Dienst <strong>Formsubmit</strong> (
+                <a href="https://formsubmit.co" target="_blank" rel="noopener noreferrer">
+                    https://formsubmit.co
                 </a>
-                ) bereitgestellt. Dabei werden die eingegebenen Daten an Formspree weitergeleitet und in unserem Postfach zugestellt.
-                Formspree ist ein externer Dienstleister mit Sitz in den USA.
+                ) bereitgestellt. Die von Ihnen im Formular eingegebenen Daten
+                (Name, E-Mail-Adresse sowie Ihre Nachricht) werden an Formsubmit übermittelt
+                und anschließend an unsere hinterlegte E-Mail-Adresse weitergeleitet.
             </p>
             <p>
-                Wir haben mit Formspree einen Vertrag zur Auftragsverarbeitung (Data Processing Agreement, DPA) geschlossen.
+                Formsubmit ist ein externer Dienstleister mit Sitz in den USA.
+                Weitere Informationen zur Datenverarbeitung durch Formsubmit
+                finden Sie in der Datenschutzerklärung des Anbieters:
+                <a href="https://formsubmit.co/privacy.pdf" target="_blank" rel="noopener noreferrer">
+                    https://formsubmit.co/privacy.pdf
+                </a>.
             </p>
+            <p>
+                Wir haben mit Formsubmit keinen direkten Vertrag zur Auftragsverarbeitung
+                (Data Processing Agreement, DPA) geschlossen. Die Nutzung des Dienstes
+                erfolgt auf Grundlage Ihrer freiwilligen Eingabe im Formular
+                (Art. 6 Abs. 1 lit. a DSGVO).
+            </p>
+
 
             <h4>Speicherdauer</h4>
             <p>
