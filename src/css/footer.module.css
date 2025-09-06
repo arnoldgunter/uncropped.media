@@ -1,0 +1,17 @@
+.footer {
+    width: 100%;
+    min-height: 10vh;
+    background-color: transparent;
+    padding: var(--space-md);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footerLink {
+    color: var(--color-foreground);
+    text-decoration: underline;
+    margin: 0 var(--space-sm);
+}

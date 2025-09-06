@@ -1,0 +1,133 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm) var(--space-lg);
+    z-index: 1000;
+    height: var(--header-height);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
+/* Desktop-Navigation sichtbar */
+.nav {
+    display: flex;
+}
+
+.nav ul {
+    display: flex;
+    gap: var(--space-md);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    color: var(--color-foreground);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--color-logo);
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.nav a.active {
+    color: var(--color-accent);
+}
+
+/* Hamburger-Button */
+.menuButton {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+    color: var(--color-foreground);
+}
+
+/* --- MOBILE STYLES --- */
+@media (max-width: 768px) {
+    /* Desktop-Navigation standardmäßig verstecken */
+    .nav {
+        display: none;
+        position: absolute;
+        right: -100%;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        background: var(--color-background);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        padding: var(--space-md);
+        gap: var(--space-sm);
+    }
+
+    .nav a {
+        font-size: var(--font-size-lg);
+    }
+
+    /* Menü sichtbar wenn open */
+    .nav.open {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: openMenu 0.5s forwards;
+    }
+
+    .menuButton {
+        display: block;
+    }
+
+    @keyframes openMenu {
+        from {
+            right: -100%;
+        }
+        to {
+            right: 0;
+        }
+    }
+}
+
+/* Logo Animation */
+.logo path {
+    stroke: var(--color-logo);
+    fill: none;
+    stroke-width: 2.5;
+    stroke-dasharray: var(--path-length, 1000);
+    stroke-dashoffset: var(--path-length, 1000);
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

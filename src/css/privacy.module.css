@@ -1,0 +1,7 @@
+.privacySection {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: var(--space-lg);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+}
